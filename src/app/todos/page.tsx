@@ -54,9 +54,8 @@ const Page = () => {
                   {todos.map((p, index) => (
                     <tr
                       key={p.id}
-                      className={`border-b transition ${
-                        index % 2 === 0 ? "bg-gray-50" : "bg-white"
-                      } hover:bg-gray-200`}
+                      className={`border-b transition ${index % 2 === 0 ? "bg-gray-50" : "bg-white"
+                        } hover:bg-gray-200`}
                     >
                       <td className="py-3 px-5">{p.todo}</td>
                       <td className={`py-3 px-5 text-center font-semibold ${p.completed ? "text-green-500" : "text-red-500"}`}>

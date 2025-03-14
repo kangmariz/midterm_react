@@ -13,8 +13,8 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Project Title */}
           <h1 className="text-2xl font-bold tracking-wide cursor">
-  <Link href="/">Midterm Project</Link>
-</h1>
+            <Link href="/">Midterm Project</Link>
+          </h1>
 
           {/* Navigation Links */}
           <div className="space-x-6">
