@@ -1,19 +1,12 @@
-import Link from "next/link";
+import Layout from "@/components/Layout";
 
-const MainPage = () => {
-return <>
-<div className="min-h-screen flex justify-center items-center ">
-  <div className="text-center">
-    <h1 className="text-7xl font-bold text-center mb-3">Rica Mariz Gudito</h1>
-    <p className="text-lg">BSIT - 3</p>
+const HomePage = () => {
+  return (
+    <Layout>
+      <h1 className="text-center text-5xl font-bold text-blue-700 mt-50">Welcome to the Midterm Project</h1>
+      <p className="text-center text-gray-600 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis fuga cumque accusamus fugit ex dolorum assumenda nihil! Minima aliquid nesciunt, rerum temporibus obcaecati ea culpa perferendis, soluta dolorem vitae accusantium.</p>
+    </Layout>
+  );
+};
 
-    <div className="mt-6 space-x-7  ">
-      <Link href={'/products'} className="button">See all Products</Link>
-      <Link href={'/todos'} className="button">See all ToDos</Link>
-    </div>
-  </div>
-   </div>
-</>
-}
-
-export default MainPage;
+export default HomePage;
